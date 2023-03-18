@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+a {
+    color: #2a292a;
+}
+
+body {
+    background-color: #2a292a;
+    overflow-x: hidden;
+    color: #2a292a;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../img-portfolio/img-fondo-header.svg);
+    background-size: 100%;
+    background-position: top;
+    background-repeat: no-repeat;
+}
+
+main {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+
+.bloque-izq {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 90vh;
+    background-color: #BD6B46;
+    transition: none;
+    animation: animateBackground infinite 6s;
+}
+
+.bloque-izq .logo {
+    display: block;
+    padding: 32px;
+    font-family: "DM Serif Display";
+    font-size: 16px;
+}
+
+.bloque-izq .logo span {
+    padding-left: 4px;
+    font-family: "montserrat", sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 40px;
+}
+
+#text::before {
+    content: '#Gotblues';
+    display: block;
+    padding: 16px;
+    margin: 16px 0;
+    font-family: "DM Serif Display";
+    font-size: 40px;
+    transition: ease;
+    animation: animateText infinite 6s;
+}
+
+#image {
+    display: block;
+    width: 417px;
+    height: 359.58px;
+    background-image: url(../img-portfolio/gotblues.png);
+    background-size: cover;
+    transition: ease;
+    animation: animateImage infinite 6s;
+}
+
+@keyframes animateBackground {
+
+    0% {
+        transition: none;
+        background-color: #BD6B46;
+    }
+
+    50% {
+        transition: none;
+        background-color: #ABA496;
+    }
+
+    100% {
+        transition: none;
+        background-color: #C6B458;
+    }
+
+}
+
+
+@keyframes animateImage {
+    
+    
+    0% {
+        transition: ease;
+        background-image: url(../img-portfolio/gotblues.png);
+    }
+
+    25% {
+        transition: ease;
+        background-image: none;
+    }
+
+    50% {
+        transition: ease;
+        background-image: url(../img-portfolio/wallapop.png);
+    }
+
+    75% {
+        transition: ease;
+        background-image: none;
+    }
+
+    99% {
+        transition: ease;
+        background-image: url(../img-portfolio/slowyourlife.png);
+    }
+
+    100% {
+        transition: ease;
+        background-image: none;
+    }
+}
+
+@keyframes animateText {
+
+    
+    0% {
+        transition: ease;
+        content: '#Gotblues';
+    }
+
+    25% {
+        transition: ease;
+        content: '  ';
+    }
+
+    50% {
+        transition: ease;
+        content: 'Wallapop';
+    }
+
+    75% {
+        transition: ease;
+        content: '  ';
+    }
+
+    99% {
+        transition: ease;
+        content: 'Slow your life';
+    }
+
+    100% {
+        transition: ease;
+        content: '  ';
+    }
+}
+
+.bloque-dcha {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50vw;
+    height: 90vh;
+}
+
+.bloque-dcha ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 32px;
+}
+
+.bloque-dcha li a {
+    display: block;
+    padding: 24px;
+    font-family: "montserrat", sans-serif;
+    font-size: 24px;
+    font-weight: 300;
+}
+
+.bloque-dcha li a:hover {
+    font-weight: 400;
+}
+
+.bloque-dcha li a:active {
+    font-weight: 500;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    height: 10vh;
+    padding: 0 40px;
+    background-color: #D0C8BC;
+
+}
+
+footer small {
+    display: block;
+    font-family: "montserrat", sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+footer ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer ul li {
+    padding: 0 8px;
+    font-family: "montserrat", sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+
+}
+
+.fixed {
+    position: fixed;
+    bottom: 0;
+}
